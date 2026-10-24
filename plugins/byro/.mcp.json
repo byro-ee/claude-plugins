@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "byro": {
+      "type": "http",
+      "url": "https://mcp.byro.ee/mcp"
+    }
+  }
+}

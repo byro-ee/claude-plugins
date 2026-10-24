@@ -1,0 +1,14 @@
+{
+  "name": "byro",
+  "owner": { "name": "Byro", "url": "https://byro.ee" },
+  "metadata": {
+    "description": "Byro for Claude Code: draft LinkedIn posts from your confirmed facts, checked by Byro, approved by you."
+  },
+  "plugins": [
+    {
+      "name": "byro",
+      "source": "./plugins/byro",
+      "description": "Draft LinkedIn posts and comments from your Byro context, check them, and send them to Byro for your review."
+    }
+  ]
+}
