@@ -2,20 +2,15 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "byro",
   "displayName": "Byro",
-  "version": "0.2.0",
-  "description": "Draft LinkedIn posts and comments from your Byro context, check them, and send them to Byro for your review.",
+  "version": "0.3.0",
+  "description": "Draft and check company communications from your confirmed Byro context. Send checked drafts to Byro for review when you ask.",
   "author": {
     "name": "Byro",
     "url": "https://byro.ee"
   },
   "homepage": "https://byro.ee",
-  "keywords": [
-    "linkedin",
-    "drafting",
-    "founder",
-    "mcp",
-    "byro"
-  ],
+  "privacyPolicyUrl": "https://byro.ee/privacy",
+  "keywords": ["linkedin", "drafting", "founder", "mcp", "byro"],
   "license": "MIT",
   "repository": "https://github.com/byro-ee/claude-plugins"
 }

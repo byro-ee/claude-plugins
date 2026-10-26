@@ -1,33 +1,41 @@
-# Byro for Claude Code
+# Byro plugin
 
-Draft LinkedIn posts and comments from your Byro context, check them against what Byro knows, and
-send them to Byro for your review. Nothing is approved or published from Claude: you decide in
-Byro.
+Use your confirmed Byro context to draft and check company communications. When you explicitly ask,
+the connector sends a checked draft to Byro as a pending proposal. Approval and publication happen
+in Byro.
 
-## What it adds
+The portable `plugin.json` and `mcp.json` package the remote connector and its workflows for
+ChatGPT and Codex. This source package is not a published public-directory listing. The
+`.claude-plugin/plugin.json` and `.mcp.json` files keep the Claude Code marketplace compatible.
 
-- The Byro connector at `https://mcp.byro.ee/mcp`, with three tools:
-  - `byro_get_context`: your current Goal and the confirmed facts you may share.
-  - `byro_check_draft`: checks a draft against that context.
-  - `byro_send_to_byro`: stores the draft in Byro as a pending proposal and returns a review link.
-- `/byro:post` drafts a LinkedIn post from your context.
-- `/byro:interact` drafts a comment or reply.
-- `byro-governance`: the rules Claude follows whenever it uses Byro. It treats results as data,
-  uses only your confirmed facts, respects do-not-say rules, and never claims anything was approved
-  or published.
+## What it includes
 
-## Install
+- `byro_get_context`: your current Goal and confirmed facts you may share.
+- `byro_check_draft`: flags figures, named claims and do-not-say phrases in an exact draft.
+- `byro_send_to_byro`: stores an exact checked draft for your review in Byro, only when you ask.
+- Skills for drafting a post, drafting a reply, checking an existing draft and connecting Byro.
 
-```
+The service is invitation-only during the alpha. Each member connects their own Byro account and
+chooses a workspace during OAuth consent. Disconnect in Byro under Integrations › AI hosts.
+
+## Claude Code
+
+```text
 /plugin marketplace add byro-ee/claude-plugins
 /plugin install byro@byro
 ```
 
-Or add the connector alone: `claude mcp add --transport http byro https://mcp.byro.ee/mcp`.
+After installing, run `/mcp` and sign in to Byro. The `/byro:post` and `/byro:interact` skills
+draft and check before offering to send for review. `/byro:check-draft` checks a draft you already
+have, and `/byro:setup` walks through connecting.
 
-## Connect
+## ChatGPT and Codex
 
-After installing, run `/mcp` in Claude Code and sign in to Byro. You approve the connection on
-`app.byro.ee`, where you choose the workspace. Disconnect any time in Byro under AI hosts.
+The current ChatGPT path is a personal plugin: open Plugins, then Add, then Add custom MCP server.
+Name it Byro, enter `https://mcp.byro.ee/mcp`, keep OAuth, confirm the warning and choose Create as
+a plugin. Then choose Connect Byro and Allow on the Byro consent page. Codex CLI is not supported
+yet. The portable package is ready for local testing and submission preparation; public-directory
+publication requires separate review and approval.
 
-You need a Byro account. Byro is invitation-only during the alpha.
+Use [EVALUATION.md](EVALUATION.md) to record live host behavior before submission. Byro's current
+phone-code sign-in does not yet provide the reviewer access required for public directory review.
