@@ -1,0 +1,39 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "byro",
+  "version": "0.3.0",
+  "description": "Use your confirmed Byro context to draft and check company communications, then send checked drafts to Byro for your review.",
+  "author": {
+    "name": "Byro",
+    "email": "info@byro.ee",
+    "url": "https://byro.ee"
+  },
+  "homepage": "https://byro.ee",
+  "license": "MIT",
+  "keywords": ["byro", "drafting", "company communications"],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup/SKILL.md",
+      "interface": {
+        "displayName": "Byro",
+        "shortDescription": "Draft and check with Byro",
+        "longDescription": "Read the Goal and facts your Byro workspace has confirmed, check a draft for flagged claims, and send a checked draft to Byro as a pending proposal for your review. Byro does not approve or publish from chat.",
+        "developerName": "Byro",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "websiteURL": "https://byro.ee",
+        "supportURL": "https://byro.ee/contact",
+        "privacyPolicyURL": "https://byro.ee/privacy",
+        "termsOfServiceURL": "https://byro.ee/terms",
+        "defaultPrompt": [
+          "Show me my current Byro Goal and confirmed shareable facts.",
+          "Check this draft against my Byro context: [paste draft]",
+          "Help me draft a LinkedIn post using only my confirmed Byro facts. Show me the checked draft."
+        ],
+        "brandColor": "#4F304D",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}
