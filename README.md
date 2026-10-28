@@ -13,6 +13,8 @@ marketplace holds the Byro plugin for Claude Code.
 Then run `/mcp` and sign in to Byro. You approve the connection on `app.byro.ee` and choose the
 workspace. You can disconnect any time in Byro under AI hosts.
 
+Setup steps for Claude, ChatGPT and Claude Code: https://byro.ee/connect.
+
 ## What you get
 
 - The Byro connector (`https://mcp.byro.ee/mcp`) with three tools: read your current goal and

@@ -4,6 +4,8 @@ Use your confirmed Byro context to draft and check company communications. When 
 the connector sends a checked draft to Byro as a pending proposal. Approval and publication happen
 in Byro.
 
+Setup steps for Claude, ChatGPT and Claude Code: https://byro.ee/connect.
+
 The portable `plugin.json` and `mcp.json` package the remote connector and its workflows for
 ChatGPT and Codex. This source package is not a published public-directory listing. The
 `.claude-plugin/plugin.json` and `.mcp.json` files keep the Claude Code marketplace compatible.
