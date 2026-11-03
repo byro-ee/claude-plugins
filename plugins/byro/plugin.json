@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "byro",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Use your confirmed Byro context to draft and check company communications, then send checked drafts to Byro for your review.",
   "author": {
     "name": "Byro",
