@@ -26,3 +26,10 @@ Setup steps for Claude, ChatGPT and Claude Code: https://byro.ee/connect.
   approved or published. You decide in Byro.
 
 Byro is invitation-only during the alpha. You need a Byro account to connect.
+
+## More about Byro
+
+- [What Byro is](https://byro.ee/about)
+- [How Byro compares with Taplio and other LinkedIn tools](https://byro.ee/blog/best-taplio-alternatives-b2b-teams)
+- [All comparison posts](https://byro.ee/blog)
+- [Research](https://byro.ee/research)
